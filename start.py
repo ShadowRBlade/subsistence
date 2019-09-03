@@ -8,3 +8,6 @@ if (platform == 'li'):
     print("Running on Linux")
 elif(platform == 'wi'):
     print("Running on Windows")
+
+perks.setPerks(18)
+
