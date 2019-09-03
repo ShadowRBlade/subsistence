@@ -1,4 +1,7 @@
+# for system interfacing
 from os import system
+# disk storage
+import sqlite3
 
 perkTitle = ['Strength    ', 'Perception  ', 'Endurance   ', 'Charisma    ', 'Intelligence', 'Agility     ', 'Luck        ']
 perkCollection = []
@@ -59,15 +62,26 @@ def setPerks(self):
     strength(self)
 
 def verify():
+    # create connection obkect
+    conn = sqlite3.connect('test.db')
+    # execute table creation if table does not exist
+    conn.execute('''CREATE TABLE IF NOT EXISTS PERKS (PERKID INT PRIMARY KEY NOT NULL, PERK TEXT NOT NULL, VALUE INT NOT NULL);''')
     system("clear")
-    print("******** Chosen Perks ********")
-    for i in range(7):
-        print(perkTitle[i], " | ", perkCollection[i])
-
-    status = input("\nPress Y to accept: ")
+    status = input("Press Y to confirm: ")
     if (status == 'Y' or status == 'y'):
+
         print("Recording Changes...")
-        # write to SQLite3 DB
+        for i in range(7):
+        # insert into table
+            statement = "INSERT INTO PERKS (PERKID, PERK , VALUE) VALUES ('" + str(i)+ "','"+str(perkTitle[i]) + "'," + str(perkCollection[i])+ ")"
+            statement = str(statement)
+            conn.execute(statement)
+        print("DONE !")
+        # display value from database
+        cursor = conn.execute("SELECT perk, value from PERKS")
+        for row in cursor:
+            print(row [0]," ", row[1])
+        
     else:
         # print("Resetting Perks..")
         setPerks(18)
