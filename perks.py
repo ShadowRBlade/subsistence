@@ -13,7 +13,6 @@ def strength(self):
     perkCollection.append(setStrength)
     perception(remain)
 
-
 def perception(self):
     setPerception = int(input("Enter Perception: "))
     # validate
@@ -56,12 +55,21 @@ def luck(self):
     perkCollection.append(setLuck)
     verify()
 
-def setPerks(self):
+def setPerks():
     system("clear")
+    initial = 18 # set to a value of 18
     print("******** Choose Your Perks ********")
-    strength(self)
+    print("\033[1;37;40m     18 Perk Points Available     \033[0;37;40m")
+    strength(initial)
 
 def verify():
+    print(perkCollection)
+    # check if sum is 18 else call setPerks
+    if(sum(perkCollection) != 18):
+        print("\033[1;31;40mInvalid Combination. Perks should amount to 18\033[0;37;40m")
+        input("Press any key to continue")
+        setPerks()
+
     # create connection obkect
     conn = sqlite3.connect('test.db')
     # execute table creation if table does not exist
@@ -78,13 +86,13 @@ def verify():
             conn.execute(statement)
         print("DONE !")
         # display value from database
-        cursor = conn.execute("SELECT perk, value from PERKS")
+        cursor = conn.execute("SELECT PERK, VALUE from PERKS")
         for row in cursor:
-            print(row [0]," ", row[1])
+            print(row [0]," | ", row[1])
         
     else:
         # print("Resetting Perks..")
-        setPerks(18)
+        setPerks()
 
     
     
