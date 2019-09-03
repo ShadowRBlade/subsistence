@@ -57,13 +57,14 @@ def luck(self):
 
 def setPerks():
     system("clear")
+    # clear or reset array to prevent garbage values from residing in the array
+    perkCollection.clear()
     initial = 18 # set to a value of 18
     print("******** Choose Your Perks ********")
     print("\033[1;37;40m     18 Perk Points Available     \033[0;37;40m")
     strength(initial)
 
 def verify():
-    print(perkCollection)
     # check if sum is 18 else call setPerks
     if(sum(perkCollection) != 18):
         print("\033[1;31;40mInvalid Combination. Perks should amount to 18\033[0;37;40m")
