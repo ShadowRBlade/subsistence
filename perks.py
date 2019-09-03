@@ -1,7 +1,7 @@
 from os import system
 
+perkTitle = ['Strength    ', 'Perception  ', 'Endurance   ', 'Charisma    ', 'Intelligence', 'Agility     ', 'Luck        ']
 perkCollection = []
-perkTitle = []
 
 def strength(self):
     setStrength = int(input("Enter Strength: "))
@@ -62,7 +62,7 @@ def verify():
     system("clear")
     print("******** Chosen Perks ********")
     for i in range(7):
-        print(perkCollection[i])
+        print(perkTitle[i], " | ", perkCollection[i])
 
     status = input("\nPress Y to accept: ")
     if (status == 'Y' or status == 'y'):
