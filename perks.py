@@ -83,9 +83,16 @@ def verify():
         # insert into table
             statement = "INSERT INTO PERKS (PERKID, PERK , VALUE) VALUES ('" + str(i)+ "','"+str(perkTitle[i]) + "'," + str(perkCollection[i])+ ")"
             statement = str(statement)
-            conn.execute(statement)
-        print("DONE !")
+            try:
+                conn.execute(statement)               
+                # commit added
+                conn.commit()
+            except:
+                print("Cannot reset perks once set.\n")
+                break  
+
         # display value from database
+        print("\nChosen Perks:")
         cursor = conn.execute("SELECT PERK, VALUE from PERKS")
         for row in cursor:
             print(row [0]," | ", row[1])
@@ -93,6 +100,3 @@ def verify():
     else:
         # print("Resetting Perks..")
         setPerks()
-
-    
-    
