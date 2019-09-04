@@ -1,5 +1,19 @@
 # subsistence
+
 #### Perks
 Choose the between the perks of __Strength, Perception, Endurance, Charisma, Intelligence, Agility and Luck.__ Try to battle the outlands and find the answers to your questions. Equip yourself with armours and grab a companion for there's lot's to explore.
 
-More scope to be revealed soon.
+#### Armour
+Get the best protection from exploring the outland and gather materials to build an armour that can help you survive the attacks from foes.
+
+Types of armours:
+<br/>
+1. Wooden Board
+* Wooden Board w/ Steel
+* Reinforeced Wooden Board and Steel
+2. Leather
+3. Metal
+4. Military Standard
+5. Custom Factory Specs
+
+## Hoping that others can help contribute too !
