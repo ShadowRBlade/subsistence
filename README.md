@@ -1,3 +1,5 @@
+[![Gitter](https://badges.gitter.im/opnclxi-subsistence/community.svg)](https://gitter.im/opnclxi-subsistence/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 # subsistence
 
 #### Perks
