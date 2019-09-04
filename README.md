@@ -11,9 +11,9 @@ Types of armours:
 1. Wooden Board
 * Wooden Board w/ Steel
 * Reinforeced Wooden Board and Steel
-2. Leather
-3. Metal
-4. Military Standard
+2. Leather Armour
+3. Metal Armour
+4. Military Standard Armour
 5. Custom Factory Specs
 
 ## Hoping that others can help contribute too !
