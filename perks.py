@@ -78,7 +78,6 @@ def verify():
     system("clear")
     status = input("Press Y to confirm: ")
     if (status == 'Y' or status == 'y'):
-
         print("Recording Changes...")
         for i in range(7):
         # insert into table
