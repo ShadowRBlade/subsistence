@@ -3,9 +3,10 @@
 
 # subsistence
 To run, simply download the file, open the file in the terminal and then execute the command
-'''
+
+```python
 python3 start.py
-'''
+```
 
 
 #### Introduction
