@@ -2,6 +2,11 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # subsistence
+To run, simply download the file, open the file in the terminal and then execute the command
+'''
+python3 start.py
+'''
+
 
 #### Introduction
 With no memory of who you are try to find out about yourself. Cruise through the outlands as you
