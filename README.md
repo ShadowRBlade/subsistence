@@ -41,9 +41,9 @@ Luck| Frequency of attacks and damage dealt. Finding objects to craft with is al
 Armour is a necessity, don't go strolling around without these or else you're the best target
 for a barbeque!
 
-TYPE|RECIPE|DESCRIPTION
-------|------|---------
-Wooden Armour| 48 Wood Blocks |Wooden armour strong enough to protect from small attacks.
-Reinforeced Wooden Board Armour|90 Wood Blocks + 3 KG steel |Wooden armour with steel breastplate, hand-guards and shin-platings. Covers most of the body.
-Metal Armour||
-Combat Power Suit||
+TYPE|DESCRIPTION
+------|-------
+Wooden Armour|Wooden armour strong enough to protect from small attacks.
+Reinforeced Wooden Board Armour|Wooden armour with steel breastplate, hand-guards and shin-platings. Covers most of the body.
+Metal Armour|
+Combat Power Suit|
