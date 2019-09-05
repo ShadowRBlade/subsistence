@@ -16,5 +16,13 @@ def openingScene():
         data = f.read()
         f.close()
         typethis(data)
+        input("Press any key to continue.....")
+        system("clear")
+        f=open("dialogues/logo.txt", "r")
+        data = f.read()
+        f.close()
+        typethis(data)
+        
+
     else:
         openingScene()    
