@@ -34,6 +34,8 @@ if(path.exists("gamedata.db")):
     for row in rows: 
         #column 3 hold the current level of the player
         currentLevel = (row[2])
+    print("Done !")
+    
 else:
     # create and write to db      
     # create connection object    
@@ -52,13 +54,17 @@ else:
 
     # set perks
     perks.setPerks()
+    input("Press any key to continue.")
     # reload code
     system("python3 start.py")
 
 # branch out to the level after the value has been retreived from currentLevel
-'''
+
 if(currentLevel == 0):
     # first district
+    sleep(2)
+    smt.openingScene()
+'''
 elif(currentLevel == 1):
     # second district
 elif(currentLevel == 2):
