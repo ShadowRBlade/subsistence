@@ -95,7 +95,7 @@ def verify():
         print("\nChosen Perks:")
         cursor = conn.execute("SELECT PERK, VALUE from PERKS")
         for row in cursor:
-            print(row [0]," | ", row[1])
+            print(row[0]," | ", row[1])
         
     else:
         # print("Resetting Perks..")
