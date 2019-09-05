@@ -71,8 +71,8 @@ def verify():
         input("Press any key to continue")
         setPerks()
 
-    # create connection obkect
-    conn = sqlite3.connect('test.db')
+    # create connection object
+    conn = sqlite3.connect('gamedata.db')
     # execute table creation if table does not exist
     conn.execute('''CREATE TABLE IF NOT EXISTS PERKS (PERKID INT PRIMARY KEY NOT NULL, PERK TEXT NOT NULL, VALUE INT NOT NULL);''')
     system("clear")
@@ -95,7 +95,7 @@ def verify():
         print("\nChosen Perks:")
         cursor = conn.execute("SELECT PERK, VALUE from PERKS")
         for row in cursor:
-            print(row [0]," | ", row[1])
+            print(row[0]," | ", row[1])
         
     else:
         # print("Resetting Perks..")
