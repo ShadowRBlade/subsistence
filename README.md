@@ -20,9 +20,6 @@ The game is divided into 4 districts/regions. When the player moves between dist
 DISTRICT                       |    BRIEFING
 -------------------------------|-----------------------------
 Small Town District| Easy going neighbours. Few enemies. 
-Heung Long Zi District| District plagued by melee weapons and fighters. Villagers are fewer in numbers here.
-Tskonge District| High powered guns and ammunition. Drugs run everything here. 
-Labyrinthine District| Well... no one who reached here came back to tell the tale.
 
 #### Perks
 Perks influence and define your character. Choosing perks wisely will give you a better chance of 
