@@ -1,4 +1,3 @@
-[![Gitter](https://badges.gitter.im/opnclxi-subsistence/community.svg)](https://gitter.im/opnclxi-subsistence/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # subsistence
